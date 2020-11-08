@@ -2,13 +2,18 @@
   "name": "arabic-quiz",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^15.1.0"
+  },
   "scripts": {
+    "start": "node index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "lodash": "^4.17.20",
     "vue": "^2.6.11"
   },
