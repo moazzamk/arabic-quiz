@@ -1,8 +1,8 @@
-// Load Node modules
-var express = require('express');
-// Initialise Express
-var app = express();
-// Render static files
-app.use(express.static('dist'));
-// Port website will run on
-app.listen(process.env.PORT);
+const express = require('express');
+const serveStatic = require("serve-static");
+const path = require('path');
+
+const app = express();
+app.use(serveStatic(path.join(__dirname, 'dist')));
+const port = process.env.PORT || 80;
+app.listen(port);
