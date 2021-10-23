@@ -1,16 +1,25 @@
 <template>
-  <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <html>
+    <head>
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+    </head>
+    <div id="app">
+      <router-view></router-view>
+    </div>
+  </html>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import 'vue-material/dist/vue-material.min.css'
+  import 'vue-material/dist/theme/default.css'
 
-export default {
+  export default {
   name: 'App',
+  data() {
+    return {};
+  },
   components: {
-    HelloWorld
+
   }
 }
 </script>
@@ -22,6 +31,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

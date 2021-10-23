@@ -1,4 +1,4 @@
-const pastProunouns = [
+export const pastPronouns = [
   // 3m
   {
     pattern: '{0}\u064E{1}\u064E{2}\u064E',
@@ -22,7 +22,7 @@ const pastProunouns = [
     tense: 'past'
   },
   {
-    pattern: '{0}\u064E{1}\u064E{2}\u064E\u062A\u0652',
+    pattern: '{0}\u064E{1}\u064E{2}\u064E\u062A\u0627',
     pronoun: 'Both of them ladies',
     tense: 'past'
   },
@@ -43,13 +43,13 @@ const pastProunouns = [
     tense: 'past'
   },
   {
-    pattern: '{0}\u064E{1}\u064E{2}\u0652\u062A\u064F\u0645\u0652',
+    pattern: '{0}\u{064E}{1}\u064E{2}\u0652\u062A\u064F\u0645\u0652',
     pronoun: 'All of you',
     tense: 'past'
   },
   // 2f
   {
-    pattern: '{0}\u064E{1}\u064E{2}\u0652\u062A\u061A',
+    pattern: '{0}\u064E{1}\u064E{2}\u0652\u062A\u{0650}',
     pronoun: 'You (fem.)',
     tense: 'past'
   },
@@ -70,5 +70,3 @@ const pastProunouns = [
     tense: 'past'
   }
 ];
-
-export default pastProunouns;
